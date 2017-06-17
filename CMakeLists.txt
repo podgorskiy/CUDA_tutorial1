@@ -1,9 +1,7 @@
 # Set the required cmake version. 2.8 is a widely used version, however there are a lot of usefull features in later versions
-CMAKE_MINIMUM_REQUIRED(VERSION 3.3)
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
 
 PROJECT(CUDA_tutorial1)
-
-#set(CUDA_TOOLKIT_ROOT_DIR )
 
 # This invoces script that locates NVIDIA CUDA tools.
 FIND_PACKAGE(CUDA REQUIRED)

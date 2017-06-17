@@ -37,7 +37,7 @@ int main()
 	int blocks_x = size_x / threads_in_block_x;
 	int blocks_y = size_y / threads_in_block_y;
 
-	float* device_array = nullptr;
+	float* device_array = NULL;
 	cudaMalloc(&device_array, size_x * size_y * sizeof(float));
 
 	kernel<<<dim3(blocks_x, blocks_y), dim3(threads_in_block_x, threads_in_block_y)>>>(device_array);
